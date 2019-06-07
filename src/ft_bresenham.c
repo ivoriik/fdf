@@ -15,11 +15,9 @@
 int		col(t_mlx *map, t_point p0, t_point p, t_bresenham *br)
 {
 	float	x0;
-	float	x;
 	float	range;
 
 	x0 = (br->axis == 'x') ? p0.nx : p0.ny;
-	x = (br->axis == 'x') ? p.nx : p.ny;
 	range = fmax(br->dl_x, br->dl_y);
 	if (p0.col_pt == p.col_pt)
 		return (p0.col_pt);
